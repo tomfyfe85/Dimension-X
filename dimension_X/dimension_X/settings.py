@@ -49,7 +49,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-ROOT_URLCONF = "chitter.urls"
+ROOT_URLCONF = "dimension_X.urls"
 
 TEMPLATES = [
     {
@@ -76,11 +76,11 @@ WSGI_APPLICATION = "chitter.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "CHITTER",
+        "NAME": "DIMENSION_X",
     },
     "test": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "CHITTER_test",
+        "NAME": "DIMENSION_X_test",
     },
 }
 
