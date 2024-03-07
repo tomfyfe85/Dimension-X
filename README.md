@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 TECH: PYTHON | DJANGO | PostgreSQL | PYTEST- A twitter clone built from scratch with user stories from the Makers Academy.
 
 V1 -
@@ -30,3 +31,6 @@ V3 -
 As a Maker
 So that I can stay constantly tapped in to the shouty box of Chitter
 I want to receive an email if I am tagged in a Peep
+=======
+TECH: PYTHON | DJANGO | PostgreSQL | PYTEST- A twitter clone built from scratch with user stories from the Makers Academy (project ongoing).
+>>>>>>> a950a0696e5ae57534a7310bdd9ca16e07750b2a
