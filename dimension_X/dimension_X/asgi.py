@@ -1,5 +1,5 @@
 """
-ASGI config for chitter project.
+ASGI config for dimension_X project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'chitter.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'dimension_X.settings')
 
 application = get_asgi_application()
