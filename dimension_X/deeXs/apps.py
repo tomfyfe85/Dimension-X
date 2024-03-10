@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class DimexConfig(AppConfig):
+class DeeXsConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'dimeX'
+    name = 'deeXs'
