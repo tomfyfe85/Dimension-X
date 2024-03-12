@@ -55,7 +55,7 @@ ROOT_URLCONF = "dimension_X.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": ["templates"],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -78,13 +78,6 @@ DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
         "NAME": "DIMENSION_X",
-        "USER": "tomfyfe",
-        "HOST": "localhost",
-        "PORT": "5432",
-    },
-    "test": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": "DIMENSION_X_test",
         "USER": "tomfyfe",
         "HOST": "localhost",
         "PORT": "5432",
