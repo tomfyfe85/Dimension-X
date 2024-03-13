@@ -3,5 +3,11 @@ from django.db import models
 
 # email, password, name and a username
 # Create your models here.
-class Deex(models.Model):
-  full_name = models.CharField(max_length=50)
+class DeeX(models.Model):
+    full_name = models.CharField(max_length=50)
+    user_name = models.CharField(max_length=50)
+    password = models.CharField(max_length=50)
+    email = models.EmailField(max_length=100)
+    deeX = models.TextField(max_length=140)
+    slug = models.SlugField()
+    time_date = models.DateTimeField(auto_now_add=True)
