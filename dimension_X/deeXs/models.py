@@ -11,3 +11,7 @@ class DeeX(models.Model):
     deeX = models.TextField(max_length=140)
     slug = models.SlugField()
     time_date = models.DateTimeField(auto_now_add=True)
+
+
+def __str__(self):
+    return self.full_name
