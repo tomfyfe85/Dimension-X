@@ -1,5 +1,6 @@
 import pytest
 from datetime import datetime
+from unittest.mock import Mock
 
 from .models import DeeX
 
@@ -7,6 +8,7 @@ from .models import DeeX
 @pytest.mark.django_db
 def test_DeeX_model():
     date_time = datetime.now()
+    date_time = Mock()
     DeeX.objects.create(
         full_name="Test name",
         user_name="Test user name",
@@ -14,17 +16,16 @@ def test_DeeX_model():
         email="some_email@geemail.com",
         deeX="HI this is a DEEX",
         slug="/1",
-        time_date=date_time,
+        date_time=date_time,
     )
 
-    print(DeeX.objects.all()[0].time_date)
     assert DeeX.objects.all()[0].full_name == "Test name"
     assert DeeX.objects.all()[0].user_name == "Test user name"
     assert DeeX.objects.all()[0].password == "TESTing1234"
     assert DeeX.objects.all()[0].email == "some_email@geemail.com"
     assert DeeX.objects.all()[0].deeX == "HI this is a DEEX"
     assert DeeX.objects.all()[0].slug == "/1"
-    assert DeeX.objects.all()[0].time_date == date_time
+    assert DeeX.objects.all()[0].date_time == date_time
 
     # full_name = models.CharField(max_length=50)
     # user_name = models.CharField(max_length=50)

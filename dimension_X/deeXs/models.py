@@ -10,7 +10,7 @@ class DeeX(models.Model):
     email = models.EmailField(max_length=100)
     deeX = models.TextField(max_length=140)
     slug = models.SlugField()
-    time_date = models.DateTimeField(auto_now_add=True)
+    date_time = models.DateTimeField(auto_now_add=True)
 
 
 def __str__(self):
