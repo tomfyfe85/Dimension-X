@@ -1,13 +1,13 @@
 from django.urls import reverse
-
+from .. import views
 """
 Initially, the #deeX.views will render the deex_list.html template with the text "DEEX"
 """
 
 
 def test_deeX_view(client):
-    url = reverse("")
-    response = client.get(url)
+    view = reverse(views.deeXs)
+    response = client.get(view)
     assert response.status_code == 200
     assert "DEEX" in response.content.decode("utf_8")
 
