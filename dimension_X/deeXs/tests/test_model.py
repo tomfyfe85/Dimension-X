@@ -51,3 +51,18 @@ def test_deeXs_are_equal(create_DeeX):
         date_time=create_DeeX.date_time,
     )
     assert deeX1 == deeX2
+
+
+"""
+Test we can format a deeX to string even when it is retrieved from the database
+"""
+
+
+@pytest.mark.django_db
+def test_deeXs_formats_to_string(create_DeeX):
+    DeeX_object = DeeX.objects.all()[0]
+
+    assert (
+        str(DeeX_object)
+        == f"DeeX(Test name, Test user name, TESTing1234, some_email@geemail.com, HI this is a DEEX, /1, {create_DeeX.date_time})"
+    )
